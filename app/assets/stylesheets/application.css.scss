@@ -2,15 +2,62 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import "font-awesome-sprockets.css";
+@import "font-awesome.css";
+
+// Typography Styles
+h1, h2, h3 {
+    font-family: 'Tangerine', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Meie Script', cursive;
+font-family: 'Open Sans', sans-serif;
+}
  
- 
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
+
+.navbar-brand {
+  font-family: 'Tangerine', cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.form-inline  {
+  padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default {
+    background-color: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  width: 800px;
+  height: 300px;
+}  
+a.dropdown-item {
+  color: black;
+  text-align: center;
+}
+
